@@ -1,8 +1,7 @@
 # tinyscheduler
 
-[![Language](https://img.shields.io/badge/language-C-blue)]
+[![Language](https://img.shields.io/badge/language-C-blue)]  [![English](https://img.shields.io/badge/lang-English-blue)](README.md) [![中文](https://img.shields.io/badge/lang-中文-red)](README.zh-CN.md)
 
-[English](README.md) | [中文](README.zh-CN.md)
 
 A tiny preemptive task scheduler for STM32, built from scratch on the Cortex-M3 PendSV exception. No RTOS, no dependencies beyond CMSIS — just a minimal round-robin context switcher in under 200 lines of code.
 
