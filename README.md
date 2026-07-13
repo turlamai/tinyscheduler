@@ -1,11 +1,10 @@
-# tinyscheduler
+# TinyScheduler
 
-[![Language](https://img.shields.io/badge/language-C-blue)]  [![English](https://img.shields.io/badge/lang-English-blue)](README.md) [![中文](https://img.shields.io/badge/lang-中文-red)](README.zh-CN.md)
+A tiny preemptive task scheduler for STM32, built from scratch on the Cortex-M3 PendSV exception. No RTOS, no dependencies beyond CMSIS — just a minimal round-robin context switcher in under 200 lines of code. The demo project runs on an STM32F103RC and blinks two LEDs (PC2, PC3) in two independent tasks, proving cooperative scheduling works on real hardware.
 
+![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)
 
-A tiny preemptive task scheduler for STM32, built from scratch on the Cortex-M3 PendSV exception. No RTOS, no dependencies beyond CMSIS — just a minimal round-robin context switcher in under 200 lines of code.
-
-The demo project runs on an STM32F103RC and blinks two LEDs (PC2, PC3) in two independent tasks, proving cooperative scheduling works on real hardware.
+**English** · [中文](README.zh-CN.md)
 
 ## How It Works
 
@@ -141,3 +140,7 @@ In `task.c`:
 | Macro | Default | Description |
 |-------|---------|-------------|
 | `CONFIG_MAX_TASK_NUM` | 8 | Maximum number of tasks (including idle) |
+
+## License
+
+This project does not currently include a license file.

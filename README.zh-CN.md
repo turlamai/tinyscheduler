@@ -1,10 +1,10 @@
-# tinyscheduler
+# TinyScheduler
 
-[English](README.md) | [中文](README.zh-CN.md)
+一个面向 STM32 的微型抢占式任务调度器，基于 Cortex-M3 PendSV 异常从零构建。不依赖任何 RTOS，除 CMSIS 外无其他依赖 — 仅用不到 200 行代码实现了最小化的轮转上下文切换。 演示工程运行在 STM32F103RC 上，通过两个独立任务分别控制两颗 LED（PC2、PC3）闪烁，验证调度器在实际硬件上的正确运行。
 
-一个面向 STM32 的微型抢占式任务调度器，基于 Cortex-M3 PendSV 异常从零构建。不依赖任何 RTOS，除 CMSIS 外无其他依赖 — 仅用不到 200 行代码实现了最小化的轮转上下文切换。
+![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)
 
-演示工程运行在 STM32F103RC 上，通过两个独立任务分别控制两颗 LED（PC2、PC3）闪烁，验证调度器在实际硬件上的正确运行。
+[English](README.md) · **中文**
 
 ## 工作原理
 
@@ -140,3 +140,7 @@ int main(void) {
 | 宏 | 默认值 | 说明 |
 |---|--------|------|
 | `CONFIG_MAX_TASK_NUM` | 8 | 最大任务数（含空闲任务） |
+
+## 许可证
+
+本项目暂未包含许可证文件。
