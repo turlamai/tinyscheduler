@@ -2,7 +2,7 @@
 
 一个面向 STM32 的微型抢占式任务调度器，基于 Cortex-M3 PendSV 异常从零构建。不依赖任何 RTOS，除 CMSIS 外无其他依赖 — 仅用不到 200 行代码实现了最小化的轮转上下文切换。 演示工程运行在 STM32F103RC 上，通过两个独立任务分别控制两颗 LED（PC2、PC3）闪烁，验证调度器在实际硬件上的正确运行。
 
-![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 [English](README.md) · **中文**
 
@@ -33,12 +33,19 @@
 
 ## 快速开始
 
-### 硬件
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/turinglambdaai/tinyscheduler.git
+cd tinyscheduler
+```
+
+### 2. 硬件
 
 - **目标 MCU**：STM32F103RC（Cortex-M3，72 MHz）
 - **LED 引脚**：PC2 和 PC3（推挽输出）
 
-### 使用 Keil MDK 构建
+### 3. 使用 Keil MDK 构建
 
 1. 在 Keil uVision 中打开 `tinyrtos.uvprojx`
 2. 构建工程（F7）
@@ -143,4 +150,4 @@ int main(void) {
 
 ## 许可证
 
-本项目暂未包含许可证文件。
+基于 [MIT 许可证](LICENSE) 授权。

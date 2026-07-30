@@ -2,7 +2,7 @@
 
 A tiny preemptive task scheduler for STM32, built from scratch on the Cortex-M3 PendSV exception. No RTOS, no dependencies beyond CMSIS — just a minimal round-robin context switcher in under 200 lines of code. The demo project runs on an STM32F103RC and blinks two LEDs (PC2, PC3) in two independent tasks, proving cooperative scheduling works on real hardware.
 
-![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 **English** · [中文](README.zh-CN.md)
 
@@ -33,12 +33,19 @@ The idle task (`task_idle`) runs when no user tasks are scheduled.
 
 ## Quick Start
 
-### Hardware
+### 1. Clone
+
+```bash
+git clone https://github.com/turinglambdaai/tinyscheduler.git
+cd tinyscheduler
+```
+
+### 2. Hardware
 
 - **Target MCU**: STM32F103RC (Cortex-M3, 72 MHz)
 - **LED pins**: PC2 and PC3 (push-pull output)
 
-### Build with Keil MDK
+### 3. Build with Keil MDK
 
 1. Open `tinyrtos.uvprojx` in Keil uVision
 2. Build the project (F7)
@@ -143,4 +150,4 @@ In `task.c`:
 
 ## License
 
-This project does not currently include a license file.
+Licensed under the [MIT License](LICENSE).
