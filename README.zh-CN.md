@@ -36,7 +36,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/turinglambdaai/tinyscheduler.git
+git clone https://github.com/turlamai/tinyscheduler.git
 cd tinyscheduler
 ```
 
