@@ -36,7 +36,7 @@ The idle task (`task_idle`) runs when no user tasks are scheduled.
 ### 1. Clone
 
 ```bash
-git clone https://github.com/turinglambdaai/tinyscheduler.git
+git clone https://github.com/turlamai/tinyscheduler.git
 cd tinyscheduler
 ```
 
